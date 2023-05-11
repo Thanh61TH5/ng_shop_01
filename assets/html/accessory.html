@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:https="http://www.w3.org/1999/xhtml"
+      xmlns:--fa-animation-duration="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+          rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+    <title>NgShop - Điện thoại, laptop, máy tính bảng, đồng hồ, phụ kiện</title>
+</head>
+<body>
+<!-- The grid parent -->
+<header class="col-span-5 bg-red-600 common-p flex flex-row justify-center">
+    <a href="index.html"><img class="img-header" src="../image/favicon.png" alt=""></a>
+    <a class="name-shop__title" href="index.html"><h4>Shop</h4></a>
+    <div class="top_menu">
+        <div class="item-header category category__mobile  flex flex-row">
+            <i class="flex-1 fa-solid fa-list" style="color: white;"></i>
+            <p class="flex-3">Danh mục</p>
+        </div>
+        <div class="menu_click hidden flex-1 shadow lm:shadow-md">
+            <ul class="menu__tree_tablet_mobile">
+                <a href="../html/mobile.html"><li>Điện thoại</li></a>
+                <a href="../html/Laptop.html"><li>Laptop</li></a>
+                <a href="../html/PC.html"><li>PC</li></a>
+                <a href="../html/tablet.html"><li>Máy tính bảng</li></a>
+                <a href="../html/TV.html"><li>Ti vi</li></a>
+                <a href="../html/watch.html"><li>Đồng Hồ</li></a>
+                <a href="../html/accessory.html"><li>Phụ kiện</li></a>
+            </ul>
+        </div>
+
+    </div>
+    <div class="search__top flex">
+        <input type="text" class="input-search__top  item-header" placeholder="   Bạn cần tìm gì?">
+        <i class=" header-icon__search fa-solid fa-magnifying-glass" style="color: #68707d;"></i>
+    </div>
+
+    <div class="item-header__right top_call">
+        <div class=" flex flex-row">
+            <i class="fa-solid fa-phone fa-shake"
+               style="--fa-animation-duration: 3s; --fa-animation-iteration-count: 2; color: white;"></i>
+            <a href="tel:195008888"><p class="flex-3">19500.8888</p></a>
+        </div>
+    </div>
+
+    <div class=" item-header__right top-store">
+        <div class="flex flex-row">
+            <i class="fa-solid fa-location-dot" style="color: #f2f2f2;"></i>
+            <p>Hệ thống cửa hàng</p>
+        </div>
+        <div class="bottom-header__store-brand bg-white">
+            <div class="trigle"></div>
+            <ul class="list-store__brand">
+                <li class="list-store__brand-item">
+                    <h4>Chi nhánh Hà Nội</h4>
+                    <span>* 262 Nguyễn Xiển - Thanh Xuân - Hà Nội</span><br>
+                    <span>* 3 Đội Cấn - Ba Đình - Hà Nội</span>
+                </li>
+                <li class="list-store__brand-item">
+                    <h4>Chi nhánh Hải Dương</h4>
+                    <span>* 262 Nguyễn Trãi - Sao Đỏ - Chí Linh - Hải Dương</span>
+
+                </li>
+                <li class="list-store__brand-item">
+                    <h4>Chi nhánh Hồ Chí Minh</h4>
+                    <span>* Tăng Nhơn Phú A - Quận 9 - Thành phố Hồ Chí Minh</span><br>
+                    <span>* 35 Đường Man Thiện - Hiệp Phú - Quận 9 - Thành phố Hồ Chí Minh</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=" top_order item-header__right">
+        <div class="flex flex-row">
+            <i class="fa-solid fa-truck-fast" style="color: #eff1f5;"></i>
+            <p>Tra cứu đơn hàng</p>
+        </div>
+        <div class="bottom-header__search-order bg-white justify-center">
+            <div class="trigle"></div>
+            <img class="img-bottom__header w-30 h-30" src="../image/empty_order.png" alt="">
+            <span>Bạn chưa có đơn hàng nào</span>
+        </div>
+    </div>
+    <div class=" top-cart item-header__right">
+        <div class="flex flex-row">
+            <i class="fa-solid fa-cart-shopping" style="color: #fdf7f7;"></i>
+            <p>Giỏ hàng</p>
+        </div>
+        <div class="bottom-header__store-brand__empty-card bg-white">
+            <div class="trigle"></div>
+            <img class="img-bottom__header w-20 h-20" src="../image/empty-cart.png" alt="">
+            <span>Chưa có sản phẩm nào</span>
+        </div>
+    </div>
+    <div class="item-header category login-top__header flex flex-row">
+        <a href="login.html" class="flex flex-row justify-between">
+            <i class="fa-solid fa-user" style="color: #f5f7f9;"></i>
+            <p>Đăng nhập</p>
+        </a>
+    </div>
+
+
+</header>
+<div id="overlay" class="hidden"></div>
+<!--begin main box-item-->
+
+<div class="box-item category_detail mt-32">
+    <div class="search_product shadow lm:shadow-md bg-gray-200 ">
+        <ul class="flex flex-warp">
+            <p class="search-product__item flex flex-row">Lọc theo danh sách:</p>
+            <li class="search-product__item "><span>Hãng sản xuất</span> <i class="fa-solid fa-chevron-down ml-2" style="color: #505358;"></i>
+                <ul class="sub_search-product__item sub_search-product__item_list bg-gray-100 z-index-4 flex flex-col ">
+                    <a href=""><li class="flex-1">Nokia</li></a>
+                    <a href=""><li  class="flex-1">Sam Sung</li></a>
+                    <a href=""><li  class="flex-1">Oppo</li></a>
+                    <a href=""><li  class="flex-1">Xiaomi</li></a>
+                    <a href=""><li  class="flex-1">Apple</li></a>
+                    <a href=""><li  class="flex-1">ViVo</li></a>
+                    <a href=""><li  class="flex-1">XOR</li></a>
+                    <a href=""><li  class="flex-1">Masstel</li></a>
+                    <a href=""><li  class="flex-1">Itel</li></a>
+                    <a href=""><li  class="flex-1">TCL</li></a>
+                </ul>
+            </li>
+
+            <li class="search-product__item">Phụ kiện di động<i class="fa-solid fa-chevron-down ml-2" style="color: #505358;"></i>
+                <ul class="sub_search-product__item sub_search-product__item-price bg-gray-100 z-index-4 flex flex-warp  justify-center">
+                    <a href=""><li>Tai nghe</li></a>
+                    <a href=""><li>Chân sạc</li></a>
+                    <a href=""><li>Dây sạc</li></a>
+                    <a href=""><li>Ốp lưng</li></a>
+                    <a href=""><li>Mic</li></a>
+                    <a href=""><li>Bàn phím</li></a>
+                    <a href=""><li>Chuột</li></a>
+                    <a href=""><li>USB</li></a>
+                </ul>
+            </li>
+            <li class="search-product__item">Phụ kiện máy tính<i class="fa-solid fa-chevron-down ml-2" style="color: #505358;"></i>
+                <ul class="sub_search-product__item sub_search-product__item_sort  bg-gray-100 flex flex-warp  justify-center">
+                    <a href=""><li>Mic</li></a>
+                    <a href=""><li>Bàn phím</li></a>
+                    <a href=""><li>Chuột</li></a>
+                    <a href=""><li>USB</li></a>
+                </ul>
+            </li>
+
+            <li class="search-product__item">Thiết bị mạng<i class="fa-solid fa-chevron-down ml-2" style="color: #505358;"></i>
+                <ul class="sub_search-product__item sub_search-product__item_sort  bg-gray-100 flex flex-warp  justify-center">
+                    <a href=""><li>Bộ kích sóng</li></a>
+                    <a href=""><li>Thiết bị bắt sóng wifi</li></a>
+                    <a href=""><li>Thiết bị phát mạng di động</li></a>
+                </ul>
+            </li>
+
+            <li class="search-product__item">Sắp xếp<i class="fa-solid fa-chevron-down ml-2" style="color: #505358;"></i>
+                <ul class="sub_search-product__item sub_search-product__item_sort  bg-gray-100 flex flex-warp  justify-center">
+                    <a href=""><li>Giá từ cao đến thấp</li></a>
+                    <a href=""><li>Giá từ thấp đến cao</li></a>
+                    <a href=""><li>Được mua nhiều nhất</li></a>
+                    <a href=""><li>Được tìm kiếm nhiều nhất</li></a>
+                    <a href=""><li>Sản phẩm mới nhất</li></a>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+    <div class="bg-gray-100 bg-opacity-50 ">
+        <!--        iphone-->
+        <div class="flex flex-wrap justify-center">
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_145_2.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">3.490.000 ₫ <span
+                        class="line-through text-gray-400">4.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_145_2.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">3.490.000 ₫ <span
+                        class="line-through text-gray-400">4.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_145_2.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">3.490.000 ₫ <span
+                        class="line-through text-gray-400">4.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_145_2.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">3.490.000 ₫ <span
+                        class="line-through text-gray-400">4.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 17%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/_/2_335_3.png"
+                     alt="">
+                <h6 class="name-item">Camera hành trình GoPro Hero 10 Bundle</h6></br>
+                <h6 class="price-item text-red-500">10.590.000₫ <span
+                        class="line-through text-gray-400">12.990.000₫</span>
+                </h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_145_2.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">3.490.000 ₫ <span
+                        class="line-through text-gray-400">4.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 17%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/_/2_335_3.png"
+                     alt="">
+                <h6 class="name-item">Camera hành trình GoPro Hero 10 Bundle</h6></br>
+                <h6 class="price-item text-red-500">10.590.000₫ <span
+                        class="line-through text-gray-400">12.990.000₫</span>
+                </h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_145_2.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">3.490.000 ₫ <span
+                        class="line-through text-gray-400">4.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_111_5_.png"
+                     alt="">
+                <h6 class="name-item">Tai nghe Bluetooth Apple AirPods Pro 2022</h6></br>
+                <h6 class="price-item text-red-500">4.690.000 ₫<span
+                        class="line-through text-gray-400">5.190.000 ₫</span>
+                </h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item  shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/sm-s901_galaxys22_front_phantomwhite_211122_1.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy S22 (8GB - 256GB)</h6></br>
+                <h6 class="price-item text-red-500">15.090.000 ₫
+
+                    <span class="line-through text-gray-400">23.490.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact flex flex-row bg-gray mt-5">
+        <div class="col_contact">
+            <h3>Tổng đài hỗ trợ miễn phí</h3>
+            <p>Hỗ trợ mua: 09887766267</p>
+            <p>Hỗ trợ lắp ráp: 0972333456</p>
+            <h3>Phương thức thanh toán</h3>
+            <div class="col_contact-payment__img flex flex-row">
+                <a href=""><img src="https://image.cellphones.com.vn/x35/media/logo/payment/zalopay-logo.png"
+                                alt=""></a>
+                <a href=""><img src="https://image.cellphones.com.vn/x35/media/logo/payment/vnpay-logo.png" alt=""></a>
+                <a href=""><img src="https://image.cellphones.com.vn/x35/media/logo/payment/moca-logo.png"
+                                alt=""></a>
+            </div>
+        </div>
+
+        <div class="col_contact">
+            <h3>Thông tin và chính sách</h3>
+            <a href=""><p>Tra thông tin đơn hàng</p></a>
+            <a href=""><p>Mua hàng trả góp Online</p></a>
+            <a href=""><p>Tra thông tin bảo hành</p></a>
+            <a href=""><p>Trung tâm bảo hành chính hãng</p></a>
+        </div>
+
+        <div class="col_contact">
+            <h3>Dịch vụ và thông tin khác</h3>
+            <a href=""><p>Khách hàng doanh nghiệp (B2B)</p></a>
+            <a href=""><p>Quy chế hoạt động</p></a>
+            <a href=""><p>Chính sách Bảo hành</p></a>
+            <a href=""><p>Liên hệ hợp tác kinh doanh</p></a>
+        </div>
+
+        <div class="col_contact">
+            <h3>Kết nối với NG Shop</h3>
+            <div class="col_contact-payment__img flex flex-row">
+                <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-youtube.png"
+                                alt=""></a>
+                <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-facebook.png"
+                                alt=""></a>
+                <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-instagram.png"
+                                alt=""></a>
+                <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-tiktok.png"
+                                alt=""></a>
+                <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-zalo.png"
+                                alt=""></a>
+            </div>
+        </div>
+
+    </div>
+    <p class="author">Powered by <a href="https://www.facebook.com/profile.php?id=100034369087029">Thanh NG</a></p>
+</div>
+</div>
+
+</div>
+</body>
+<script src="../javascript/javascript.js">
+</script>
+</html>

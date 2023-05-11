@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:https="http://www.w3.org/1999/xhtml"
+      xmlns:--fa-animation-duration="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+          rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+    <link rel="shortcut icon" href="../image/favicon.png" type="image/x-icon">
+    <title>NgShop - Điện thoại, laptop, máy tính bảng, đồng hồ, phụ kiện</title>
+</head>
+<body>
+<!-- The grid parent -->
+<header class="col-span-5 bg-red-600 common-p flex flex-row justify-center">
+    <a href="index.html"><img class="img-header" src="../image/favicon.png" alt=""></a>
+    <a class="name-shop__title" href="index.html"><h4>Shop</h4></a>
+    <div class="top_menu">
+        <div class="item-header category category__mobile  flex flex-row">
+            <i class="flex-1 fa-solid fa-list" style="color: white;"></i>
+            <p class="flex-3">Danh mục</p>
+        </div>
+        <div class="menu_click hidden flex-1 shadow lm:shadow-md">
+            <ul class="menu__tree_tablet_mobile">
+                <a href="../html/mobile.html"><li>Điện thoại</li></a>
+                <a href="../html/Laptop.html"><li>Laptop</li></a>
+                <a href="../html/PC.html"><li>PC</li></a>
+                <a href="../html/tablet.html"><li>Máy tính bảng</li></a>
+                <a href="../html/TV.html"><li>Ti vi</li></a>
+                <a href="../html/watch.html"><li>Đồng Hồ</li></a>
+                <a href="../html/accessory.html"><li>Phụ kiện</li></a>
+            </ul>
+        </div>
+
+    </div>
+    <div class="search__top flex">
+    <input type="text" class="input-search__top  item-header" placeholder="   Bạn cần tìm gì?">
+    <i class=" header-icon__search fa-solid fa-magnifying-glass" style="color: #68707d;"></i>
+    </div>
+
+    <div class="item-header__right top_call">
+        <div class=" flex flex-row">
+            <i class="fa-solid fa-phone fa-shake"
+               style="--fa-animation-duration: 3s; --fa-animation-iteration-count: 2; color: white;"></i>
+            <a href="tel:195008888"><p class="flex-3">19500.8888</p></a>
+        </div>
+    </div>
+
+    <div class=" item-header__right top-store">
+        <div class="flex flex-row">
+            <i class="fa-solid fa-location-dot" style="color: #f2f2f2;"></i>
+            <p>Hệ thống cửa hàng</p>
+        </div>
+        <div class="bottom-header__store-brand bg-white">
+            <div class="trigle"></div>
+            <ul class="list-store__brand">
+                <li class="list-store__brand-item">
+                    <h4>Chi nhánh Hà Nội</h4>
+                    <span>* 262 Nguyễn Xiển - Thanh Xuân - Hà Nội</span><br>
+                    <span>* 3 Đội Cấn - Ba Đình - Hà Nội</span>
+                </li>
+                <li class="list-store__brand-item">
+                    <h4>Chi nhánh Hải Dương</h4>
+                    <span>* 262 Nguyễn Trãi - Sao Đỏ - Chí Linh - Hải Dương</span>
+
+                </li>
+                <li class="list-store__brand-item">
+                    <h4>Chi nhánh Hồ Chí Minh</h4>
+                    <span>* Tăng Nhơn Phú A - Quận 9 - Thành phố Hồ Chí Minh</span><br>
+                    <span>* 35 Đường Man Thiện - Hiệp Phú - Quận 9 - Thành phố Hồ Chí Minh</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=" top_order item-header__right">
+        <div class="flex flex-row">
+            <i class="fa-solid fa-truck-fast" style="color: #eff1f5;"></i>
+            <p>Tra cứu đơn hàng</p>
+        </div>
+        <div class="bottom-header__search-order bg-white justify-center">
+            <div class="trigle"></div>
+            <img class="img-bottom__header w-30 h-30" src="../image/empty_order.png" alt="">
+            <span>Bạn chưa có đơn hàng nào</span>
+        </div>
+    </div>
+    <div class=" top-cart item-header__right">
+        <div class="flex flex-row">
+            <i class="fa-solid fa-cart-shopping" style="color: #fdf7f7;"></i>
+            <p>Giỏ hàng</p>
+        </div>
+        <div class="bottom-header__store-brand__empty-card bg-white">
+            <div class="trigle"></div>
+            <img class="img-bottom__header w-20 h-20" src="../image/empty-cart.png" alt="">
+            <span>Chưa có sản phẩm nào</span>
+        </div>
+    </div>
+    <div class="item-header category login-top__header flex flex-row">
+        <a href="login.html" class="flex flex-row justify-between">
+            <i class="fa-solid fa-user" style="color: #f5f7f9;"></i>
+        <p>Đăng nhập</p>
+        </a>
+    </div>
+
+
+</header>
+<div id="overlay" class="hidden"></div>
+
+<div class="box-container flex flex-row col-span-5 md:col-span-1">
+    <div class="box-menu__tree flex-1 shadow lm:shadow-md">
+        <ul class="menu__tree">
+            <a href="../html/mobile.html"><li>Điện thoại</li></a>
+            <a href="../html/Laptop.html"><li>Laptop</li></a>
+            <a href="../html/PC.html"><li>PC</li></a>
+            <a href="../html/tablet.html"><li>Máy tính bảng</li></a>
+            <a href="../html/TV.html"><li>Ti vi</li></a>
+            <a href="../html/watch.html"><li>Đồng Hồ</li></a>
+            <a href="../html/accessory.html"><li>Phụ kiện</li></a>
+
+        </ul>
+    </div>
+    <button class="chevron che_left "><i class=" fa fa-chevron-left arrow chevron-left"></i></button>
+
+    <div class="slider flex-1">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/oppo-sliding-new-moban.png"
+             alt="">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/iphone-14-pro-sliding-new-trogia2tr.jpg"
+             alt="">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/hotsale-s22-uktrrcuoituan.png"
+             alt="">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/a34-sliding-new-th4.png"
+             alt="">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/kieslect sliding.png"
+             alt="">
+
+    </div>
+    <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    <div class="block-top__right-slider flex-1">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/right-banner-ideapad-3.jpg"
+             alt="">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/right-banner-th5-newww1.jpg"
+             alt="">
+        <img src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/s20-fe-right-th555.jpg"
+             alt="">
+    </div>
+</div>
+
+<!--begin box-sale-->
+<div class="box-item bg-orange-200">
+    <img class="name-banner__sale m-x w-70 h- 30 flex justify-center"
+         src="https://cdn2.cellphones.com.vn/600x,webp/media/wysiwyg/hst.png" alt="">
+    <div class=" flex flex-row">
+        <button class="chevron che_left "><i class=" fa fa-chevron-left arrow chevron-left"></i></button>
+
+        <div class="slideshow_sale flex flex-row">
+            <div class="item flex-1">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/sm-s908_galaxys22ultra_front_phantomblack_211119_2.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy S22 Ultra (12GB - 256GB)</h6></br>
+                <h6 class="price-item text-red-500">19.490.000₫ <span
+                        class="line-through text-gray-400">33.990.000₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/a/samsung_galaxy_z_flip_m_i_2022-1_1.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy Z Flip4 128GB</h6></br>
+                <h6 class="price-item text-red-500">16.590.000₫ <span
+                        class="line-through text-gray-400">23.990.000₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/sm-s901_galaxys22_front_pinkgold_211122.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy S22 (8GB - 128GB)</h6></br>
+                <h6 class="price-item text-red-500">13.490.000 ₫ <span
+                        class="line-through text-gray-400">21.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/6/1/61c76810-d69e-4f77-bfc3-15e1a914a4bb.png"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy A14 5G</h6></br>
+                <h6 class="price-item text-red-500">4.690.000 ₫<span
+                        class="line-through text-gray-400">5.190.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/sm-s901_galaxys22_front_phantomwhite_211122_1.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy S22 (8GB - 256GB)</h6></br>
+                <h6 class="price-item text-red-500">15.090.000 ₫
+
+                    <span class="line-through text-gray-400">23.490.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/2/s22_3.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy S22 Plus (8GB - 256GB)</h6></br>
+                <h6 class="price-item text-red-500">18.450.000 ₫ <span
+                        class="line-through text-gray-400">27.490.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+</div>
+<!--end box-sale-->
+
+<!--begin main box-item-->
+<div class="box-item ">
+    <div class="title-item flex justify-between bg-gray-100 bg-opacity-50">
+        <h4 class="items-start uppercase text-xg opacity-75">Điện thoại thông minh</h4>
+        <div class="relate_tag flex items-end">
+            <a href="">Iphone</a>
+            <a href="">Xiaomi</a>
+            <a href="">Oppo</a>
+            <a href="">Samsung</a>
+            <a href="">Redmi</a>
+            <a href="">Nokia</a>
+            <a href="">Vivo</a>
+            <a href="">Xem tất cả</a>
+        </div>
+    </div>
+    <div class=" flex flex-row bg-gray-100 bg-opacity-50 ">
+        <button class="chevron che_left button_phone_left "><i class=" fa fa-chevron-left arrow chevron-left"></i>
+        </button>
+
+        <!--        iphone-->
+        <div class="slideshow_sale flex flex-row ">
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 11%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/_/t_m_12.png"
+                     alt="">
+                <h6 class="name-item">iPhone 14 Pro 128GB | Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">26.790.000 ₫<span
+                        class="line-through text-gray-400">29.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/_/3_225.jpg"
+                     alt="">
+                <h6 class="name-item">iPhone 11 64GB I Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">10.290.000 ₫ <span
+                        class="line-through text-gray-400">11.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 10%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_252.jpg"
+                     alt="">
+                <h6 class="name-item">iPhone 12 64GB I Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">14.390.000 ₫<span
+                        class="line-through text-gray-400">15.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/_/3_51_1_7.jpg"
+                     alt="">
+                <h6 class="name-item">iPhone 13 Pro Max 128GB | Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">24.590.000 ₫<span
+                        class="line-through text-gray-400">28.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 11%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/v/_/v_ng_20.png"
+                     alt="">
+                <h6 class="name-item">iPhone 14 Pro Max 256GB | Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">29.490.000 ₫
+                    <span class="line-through text-gray-400">32.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/_/3_225.jpg"
+                     alt="">
+                <h6 class="name-item">iPhone 11 64GB I Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">10.290.000 ₫ <span
+                        class="line-through text-gray-400">11.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+    <!--        end iphone-->
+    <!--    begin Laptop-->
+    <div class="title-item flex justify-between ">
+        <h4 class="items-start uppercase text-xg opacity-75">Laptop</h4>
+        <div class="relate_tag flex items-end">
+            <a href="">Dell</a>
+            <a href="">Acer</a>
+            <a href="">Asus</a>
+            <a href="">HP</a>
+            <a href="">Lenovo</a>
+            <a href="">Macbook</a>
+            <a href="">Thinkpad</a>
+            <a href="">Xem tất cả</a>
+        </div>
+    </div>
+    <div class=" flex flex-row">
+        <button class="chevron che_left button_phone_left "><i class=" fa fa-chevron-left arrow chevron-left"></i>
+        </button>
+
+        <div class="slideshow_sale flex flex-row">
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 20%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/p/r/pro-m2.jpg"
+                     alt="">
+                <h6 class="name-item">Apple Macbook Pro 13 M2 2022 8GB 256GB I Chính hãng Apple Việt Nam</h6></br>
+                <h6 class="price-item text-red-500">28.690.000 ₫<span
+                        class="line-through text-gray-400">35.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/a/i/air_m2.png"
+                     alt="">
+                <h6 class="name-item">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </h6></br>
+                <h6 class="price-item text-red-500">18.450.000 ₫ <span
+                        class="line-through text-gray-400">28.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 36%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/a/p/apple_mac.png"
+                     alt="">
+                <h6 class="name-item">Apple Macbook Air M2 2022 8GB 256GB I Chính hãng Apple Việt Nam</h6></br>
+                <h6 class="price-item text-red-500">26.390.000 ₫<span
+                        class="line-through text-gray-400">32.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 20%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/l/a/lap5h05.png"
+                     alt="">
+                <h6 class="name-item">Laptop Lenovo Ideapad Gaming 3 15IHU6 82K101B5VN	</h6></br>
+                <h6 class="price-item text-red-500">18.590.000 ₫<span
+                        class="line-through text-gray-400">22.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 17%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/4/h/4h43.png"
+                     alt="">
+                <h6 class="name-item">Laptop Asus Gaming Rog Strix G15 G513IH HN015W</h6></br>
+                <h6 class="price-item text-red-500">17.490.000 ₫
+                    <span class="line-through text-gray-400">19.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 5%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/m/2/m2_pro_14.png"
+                     alt="">
+                <h6 class="name-item">MacBook Pro 14 inch M2 Pro 2023 (10 CPU - 16 GPU - 16GB - 512GB)</h6></br>
+                <h6 class="price-item text-red-500">47.290.000 ₫ <span
+                        class="line-through text-gray-400">52.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+    <!--    end Laptop-->
+
+    <!--    begin PC-->
+
+    <div class="title-item flex justify-between bg-gray-100 bg-opacity-50">
+        <h4 class="items-start uppercase text-xg opacity-75">Máy tính để bàn</h4>
+        <div class="relate_tag flex flex items-end">
+            <a href="">Pc Gaming</a>
+            <a href="">PC đồ họa</a>
+            <a href="">Màn hình văn phòng</a>
+            <a href="">Màn hình gaming</a>
+            <a href="">Xem tất cả</a>
+        </div>
+    </div>
+    <div class=" flex flex-row bg-gray-100 bg-opacity-50">
+        <button class="chevron che_left button_phone_left "><i class=" fa fa-chevron-left arrow chevron-left"></i>
+        </button>
+
+        <div class="slideshow_sale flex flex-row">
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 10%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_160.png"
+                     alt="">
+                <h6 class="name-item">PC Gaming Asus Rog Strix GA35 G35DX-VN003W</h6></br>
+                <h6 class="price-item text-red-500">44.690.000 ₫<span
+                        class="line-through text-gray-400">49.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 16%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_182.png"
+                     alt="">
+                <h6 class="name-item">Máy tính văn phòng All In One văn phòng Asus V241EAT-BA057W</h6></br>
+                <h6 class="price-item text-red-500">15.290.000 ₫ <span
+                        class="line-through text-gray-400">18.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 16%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_182.png"
+                     alt="">
+                <h6 class="name-item">Máy tính văn phòng All In One văn phòng Asus V241EAT-BA057W</h6></br>
+                <h6 class="price-item text-red-500">15.390.000 ₫<span
+                        class="line-through text-gray-400">18.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_186.png"
+                     alt="">
+                <h6 class="name-item">PC CPS Gaming G1</h6></br>
+                <h6 class="price-item text-red-500">9.590.000 ₫<span
+                        class="line-through text-gray-400">13.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 45%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_176_2_.png"
+                     alt="">
+                <h6 class="name-item">PC Gaming Asus ROG Strix GT15 G15CF-71270F110W</h6></br>
+                <h6 class="price-item text-red-500">13.490.000 ₫
+                    <span class="line-through text-gray-400">39.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 23%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/r/group_111_3.png"
+                     alt="">
+                <h6 class="name-item">alt="PC CPS văn phòng S2"</h6></br>
+                <h6 class="price-item text-red-500">23.290.000 ₫ <span
+                        class="line-through text-gray-400">6.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+    <!--    end PC-->
+
+    <!--    begin Tablet-->
+    <div class="title-item flex justify-between">
+        <h4 class="items-start uppercase text-xg opacity-75">Máy tính bảng</h4>
+        <div class="relate_tag flex items-end">
+            <a href="">iPad Pro</a>
+            <a href="">iPad Air</a>
+            <a href="">Samsung</a>
+            <a href="">Xiaomi</a>
+            <a href="">Huawei</a>
+            <a href="">Lenovo</a>
+            <a href="">Xem tất cả</a>
+        </div>
+    </div>
+    <div class=" flex flex-row">
+        <button class="chevron che_left button_phone_left "><i class=" fa fa-chevron-left arrow chevron-left"></i>
+        </button>
+
+        <div class="slideshow_sale flex flex-row">
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 21%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/x/_/x_mmas.png"
+                     alt="">
+                <h6 class="name-item">iPad 10.2 2021 WiFi 64GB | Chính hãng Apple Việt Nam</h6></br>
+                <h6 class="price-item text-red-500">7.690.000 ₫<span
+                        class="line-through text-gray-400">8.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_253_3.jpg"
+                     alt="">
+                <h6 class="name-item">iPad Air 5 (2022) 64GB I Chính hãng Apple Việt Nam</h6></br>
+                <h6 class="price-item text-red-500">14.290.000 ₫ <span
+                        class="line-through text-gray-400">16.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/ipad-2022-hero-silver-wifi-select.png"
+                     alt="">
+                <h6 class="name-item">iPad Gen 10 10.9 inch 2022 Wifi 64GB I Chính hãng Apple Việt Nam</h6></br>
+                <h6 class="price-item text-red-500">11.390.000 ₫<span
+                        class="line-through text-gray-400">12.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 22%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/a/tab_s8_ultra.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy Tab S8 Ultra 5G</h6></br>
+                <h6 class="price-item text-red-500">24.590.000 ₫<span
+                        class="line-through text-gray-400">30.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 6%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/_/3_229.jpg"
+                     alt="">
+                <h6 class="name-item">iPad mini 6 WiFi 64GB | Chính hãng Apple Việt Nam</h6></br>
+                <h6 class="price-item text-red-500">12.490.000 ₫
+                    <span class="line-through text-gray-400">12.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 26%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/a/tab_s8_2.jpg"
+                     alt="">
+                <h6 class="name-item">Samsung Galaxy Tab S8 WIFI</h6></br>
+                <h6 class="price-item text-red-500">13.290.000 ₫ <span
+                        class="line-through text-gray-400">17.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+    <!--    end Tablet-->
+
+    <!--    begin TV-->
+    <div class="title-item flex justify-between bg-gray-100 bg-opacity-50">
+        <h4 class="items-start uppercase text-xg opacity-75">Ti vi</h4>
+        <div class="relate_tag flex items-end">
+            <a href="">Sam sung</a>
+            <a href="">Xiaomi</a>
+            <a href="">Toshiba</a>
+            <a href="">LG</a>
+            <a href="">Sony</a>
+            <a href="">Casper</a>
+            <a href="">Xem tất cả</a>
+        </div>
+    </div>
+    <div class=" flex flex-row bg-gray-100 bg-opacity-50">
+        <button class="chevron che_left button_phone_left "><i class=" fa fa-chevron-left arrow chevron-left"></i>
+        </button>
+
+        <div class="slideshow_sale flex flex-row">
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 33%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_74_38.jpg"
+                     alt="">
+                <h6 class="name-item">Android Tivi Xiaomi P1 55 inch</h6></br>
+                <h6 class="price-item text-red-500">7.690.000 ₫<span
+                        class="line-through text-gray-400">11.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 46%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/smart_tivi_toshiba_55_inch_4k_hdr_55c350lp.jpg"
+                     alt="">
+                <h6 class="name-item">Google Tivi Toshiba 50 inch 4K HDR 50C350LP</h6></br>
+                <h6 class="price-item text-red-500">7.290.000 ₫ <span
+                        class="line-through text-gray-400">14.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 40%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_74_38_1.jpg"
+                     alt="">
+                <h6 class="name-item">Android Tivi Xiaomi P1 43 inch</h6></br>
+                <h6 class="price-item text-red-500">5.390.000 ₫<span
+                        class="line-through text-gray-400">9.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 49%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/c/scdfdf_1_.jpg"
+                     alt="">
+                <h6 class="name-item">alt="Smart Tivi Coocaa HD 32 inch Wifi 32S7G"</h6></br>
+                <h6 class="price-item text-red-500">3.590.000 ₫<span
+                        class="line-through text-gray-400">6.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 43%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/s/m/smart-tivi-sony-4k-50-inch-kd-50x75k-1_1.jpg"
+                     alt="">
+                <h6 class="name-item">Smart Tivi Sony 4K 55 inch KD-55X75K VN3</h6></br>
+                <h6 class="price-item text-red-500">11.490.000 ₫
+                    <span class="line-through text-gray-400">20.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 61%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/t/e/text_ng_n_22.png"
+                     alt="">
+                <h6 class="name-item">Google Tivi Coocaa 4K 55 inch 55Y72</h6></br>
+                <h6 class="price-item text-red-500">7.290.000 ₫ <span
+                        class="line-through text-gray-400">20.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+    <!--    end TV-->
+
+    <!--    begin dongho-->
+    <div class="title-item flex justify-between">
+        <h4 class="items-start uppercase text-xg opacity-75">Đồng hồ</h4>
+        <div class="relate_tag flex flex-row items-end">
+            <a href="">Sam sung</a>
+            <a href="">Xiaomi</a>
+            <a href="">Apple Watch</a>
+            <a href="">Huawei</a>
+            <a href="">Amazfit</a>
+            <a href="">Garmin</a>
+            <a href="">Xem tất cả</a>
+        </div>
+    </div>
+    <div class=" flex flex-row">
+        <button class="chevron che_left button_phone_left "><i class=" fa fa-chevron-left arrow chevron-left"></i>
+        </button>
+
+        <div class="slideshow_sale flex flex-row">
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 19%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/u/huawei_1_.png"
+                     alt="">
+                <h6 class="name-item">Đồng hồ thông minh Huawei Watch GT3 Pro dây silicone</h6></br>
+                <h6 class="price-item text-red-500">6.890.000 ₫<span
+                        class="line-through text-gray-400">8.490.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 30%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/u/huawei_1_2.png"
+                     alt="">
+                <h6 class="name-item">Đồng hồ thông minh Huawei Watch GT3 46mm dây da</h6></br>
+                <h6 class="price-item text-red-500">4.290.000 ₫ <span
+                        class="line-through text-gray-400">6.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 8%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/g/a/garmin_54_.png"
+                     alt="">
+                <h6 class="name-item">Đồng hồ thông minh Amazfit GTS 4 Mini</h6></br>
+                <h6 class="price-item text-red-500">2.390.000 ₫<span
+                        class="line-through text-gray-400">2.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 40%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/u/huawei_2__1.png"
+                     alt="">
+                <h6 class="name-item">Đồng hồ thông minh Soundpeats Watch 2 </h6></br>
+                <h6 class="price-item text-red-500">590.000 ₫<span
+                        class="line-through text-gray-400">990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 19%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/h/u/huawei_5_.png"
+                     alt="">
+                <h6 class="name-item">Đồng hồ thông minh Huawei Watch GT3 Pro dây da</h6></br>
+                <h6 class="price-item text-red-500">7.490.000 ₫
+                    <span class="line-through text-gray-400">8.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item flex-1 shadow lm:shadow-md">
+                <div class="ribbon">
+                    <span class="ribbon4">Giảm 15%</span>
+                </div>
+                <img src="https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/3/_/3_225.jpg"
+                     alt="">
+                <h6 class="name-item">iPhone 11 64GB I Chính hãng VN/A</h6></br>
+                <h6 class="price-item text-red-500">10.290.000 ₫ <span
+                        class="line-through text-gray-400">11.990.000 ₫</span></h6>
+                <div class="star-item flex-row">
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                    <i class="flex-1 fa-solid fa-star" style="color: #eec911;"></i>
+                </div>
+                <div class="heart-item flex flex-row">
+                    <p class="flex-1">Yêu thích</p>
+                    <div class="flex-1 heart-item_animation">
+                        <i class="heart-default fa-regular fa-heart"></i>
+                        <i class=" heart-red fa-solid fa-heart" style="color: #d1001c;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="chevron che_right"><i class=" fa fa-chevron-right arrow chevron-right"></i></button>
+    </div>
+    <!--    end dongho-->
+    <!--    begin phu kien-->
+    <div class="bg-gray-100 bg-opacity-50 other_product">
+        <div class="title-item flex justify-between other_product-item">
+            <h4 class="items-start uppercase text-xg opacity-75">Phụ kiện</h4>
+            <div class="relate_tag flex items-end">
+                <a href="">Xem tất cả</a>
+            </div>
+        </div>
+        <div class=" item__phukien flex flex-row">
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Chuột</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-663.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Pin dự phòng</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-122.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Kính cường lực</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-286.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Phụ kiện laptop</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-44.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md"
+                 style="background-image: url(https://cdn2.cellphones.com.vn/x/media/icons/category/cate-109.svg)">
+                <h6>Thẻ nhớ USB</h6>
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Ốp lưng</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-108.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Thiết bị mạng</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-676.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Sim số đẹp</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/s/i/sim_1_1.png" alt="">
+            </div>
+
+
+        </div>
+        <!--    end phu kien-->
+        <!--    begin hang cu-->
+        <div class="title-item flex justify-between">
+            <h4 class="items-start uppercase text-xg opacity-75">Hàng cũ</h4>
+            <div class="relate_tag flex items-end">
+                <a href="">Xem tất cả</a>
+            </div>
+        </div>
+        <div class=" item__phukien flex flex-row">
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>LapTop cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-878.svg" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Điện thoại cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/i/p/ip-14-hp-cu.png"
+                     alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Loa cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/c/a/cate-loa_1.png" alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Máy tính bảng cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/i/p/ipad-cate-cu.png"
+                     alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Tai nghe cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/c/a/cate-tai-nghe_1.png"
+                     alt="">
+            </div>
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Phụ kiện cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/c/a/cate-phu-kien.png"
+                     alt="">
+            </div>
+
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Đồng hồ thông minh cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/x/media/icons/category/cate-451.svg" alt="">
+            </div>
+
+            <div class="item__other flex-1 shadow lm:shadow-md">
+                <h6>Màn hình máy tính cũ</h6>
+                <img src="https://cdn2.cellphones.com.vn/150x,webp,q70/media/catalog/product/c/a/cate-man-hinh.png"
+                     alt="">
+            </div>
+        </div>
+        <div class="contact flex flex-warp bg-gray">
+            <div class="col_contact">
+                <h3>Tổng đài hỗ trợ miễn phí</h3>
+                <p>Hỗ trợ mua: 09887766267</p>
+                <p>Hỗ trợ lắp ráp: 0972333456</p>
+                <h3>Phương thức thanh toán</h3>
+                <div class="col_contact-payment__img flex flex-row">
+                    <a href=""><img src="https://image.cellphones.com.vn/x35/media/logo/payment/zalopay-logo.png"
+                                    alt=""></a>
+                    <a href=""><img src="https://image.cellphones.com.vn/x35/media/logo/payment/vnpay-logo.png" alt=""></a>
+                    <a href=""><img src="https://image.cellphones.com.vn/x35/media/logo/payment/moca-logo.png"
+                                    alt=""></a>
+                </div>
+            </div>
+
+            <div class="col_contact">
+                <h3>Thông tin và chính sách</h3>
+                <a href=""><p>Tra thông tin đơn hàng</p></a>
+                <a href=""><p>Mua hàng trả góp Online</p></a>
+                <a href=""><p>Tra thông tin bảo hành</p></a>
+                <a href=""><p>Trung tâm bảo hành chính hãng</p></a>
+            </div>
+
+            <div class="col_contact">
+                <h3>Dịch vụ và thông tin khác</h3>
+                <a href=""><p>Khách hàng doanh nghiệp (B2B)</p></a>
+                <a href=""><p>Quy chế hoạt động</p></a>
+                <a href=""><p>Chính sách Bảo hành</p></a>
+                <a href=""><p>Liên hệ hợp tác kinh doanh</p></a>
+            </div>
+
+            <div class="col_contact">
+                <h3>Kết nối với NG Shop</h3>
+                <div class="col_contact-payment__img flex flex-row">
+                    <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-youtube.png"
+                                    alt=""></a>
+                    <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-facebook.png"
+                                    alt=""></a>
+                    <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-instagram.png"
+                                    alt=""></a>
+                    <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-tiktok.png"
+                                    alt=""></a>
+                    <a href=""><img src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-zalo.png"
+                                    alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <p class="author">Powered by <a href="https://www.facebook.com/profile.php?id=100034369087029">Thanh NG</a></p>
+    <!--    end hang cu-->
+    <!--end main item-->
+</div>
+</body>
+<script src="../javascript/javascript.js">
+</script>
+</html>
